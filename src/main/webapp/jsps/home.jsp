@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Mithun Technologies Private Ltd. Ph No: +91-9980923226,+91-9900012028 Bengaluru,Karnataka,India,ashwath</h1>
-<h1 align="center"> Mithun Technologies- checking github webhook</h1>
+<h1 align="center"> Mithun Technologies- github webhooks check</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
