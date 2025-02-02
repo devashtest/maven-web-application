@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Mithun Technologies. Ph No: +91-9980923226,+91-9900012028</h1>
-<h1 align="center"> Mithun Technologies- Very Good Training center for DevOps & Cloud. checking replication controller. image 2 </h1>
+<h1 align="center"> Mithun Technologies- Very Good Training center for DevOps & Cloud. CI CD with jenkins. building application, building image with docker and pushing image to ECR and deploy with k8s. </h1>
 
 <h2> Trainer Name: Ashwath Reddy</h2>
 <hr>
