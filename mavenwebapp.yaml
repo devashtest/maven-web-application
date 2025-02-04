@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mavenwebappdeployment
+  name: mavenwebapp-deploy
 spec:
   revisionHistoryLimit: 10
   replicas: 2
@@ -9,15 +9,15 @@ spec:
     type: Recreate
   selector:
     matchLabels:
-      app: mavenwebapp
+      app: mavenweb
   template:
     metadata:
-      name: mavenwebapppod
+      name: mavenwebapp-pod
       labels:
-        app: mavenwebapp
+        app: mavenweb
     spec:
       containers:
-        - name: mavenwebappcontainer
+        - name: mavenwebapp-container
           image: ashwath01/maven-web-application:${IMAGE_TAG}
           ports:
             - containerPort: 8080
@@ -28,8 +28,6 @@ spec:
             limits:
               cpu: 500m
               memory: 512Mi
-      imagePullSecrets:
-       - name: regcred
 ---
 apiVersion: v1
 kind: Service
@@ -37,7 +35,7 @@ metadata:
   name: mavenwebapp-svc
 spec:
   selector:
-    app: mavenwebapp
+    app: mavenweb
   type: NodePort
   ports:
   - port: 80
